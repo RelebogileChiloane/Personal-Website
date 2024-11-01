@@ -68,4 +68,54 @@ section {
 #contact {
     background: #f5f5f5;
 }
+/* Project Section Styling */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    width: 45%;
+    background: #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+/* Project Image Styling */
+.project-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Project Info Styling */
+.project-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+}
+
+.project-info p {
+    font-size: 0.9em;
+    color: #555;
+    transition: font-size 0.3s ease;
+}
+
+.project:hover .project-info h3,
+.project:hover .project-info p {
+    font-size: 1.4em;
+}
 
